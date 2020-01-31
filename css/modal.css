@@ -1,0 +1,17 @@
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00000085;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.overlay.overlay--hidden {
+  display: none;
+}
+
+.overlay.overlay--show {
+  display: flex;
+}

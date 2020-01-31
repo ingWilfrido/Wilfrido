@@ -1,0 +1,247 @@
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <!--cache control App-->
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <!--cache control App-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#ed1c27">
+
+  <!-- Set Up the App Icon -->
+  <link rel="apple-touch-icon" href="../../assets/img/apple/icon5757.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/img/apple/touch-icon-ipad-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/img/apple/apple-touch-icon.png">
+
+  <!-- Load It Like A Native App -->
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Customize the Startup Screen -->
+  <link rel="apple-touch-startup-image" href="../../assets/img/apple/apple-touch-startup-image-320x460.png"
+    media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
+  <link rel="apple-touch-startup-image" href="../../assets/img/apple/apple-touch-startup-image-640x920.png"
+    media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="../../assets/img/apple/apple-touch-startup-image-640x1096.png"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="../../assets/img/apple/apple-touch-startup-image-768x1004.png"
+    media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)">
+  <link rel="apple-touch-startup-image" href="../../assets/img/apple/apple-touch-startup-image-748x1024.png"
+    media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)">
+  <link rel="apple-touch-startup-image" href="../../assets/img/apple/apple-touch-startup-image-1536x2008.png"
+    media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="../../assets/img/apple/apple-touch-startup-image-1496x2048.png"
+    media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
+
+  <!--  GOOGLE FONTS  -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i&amp;display=swap&amp;subset=latin-ext"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;display=swap"
+    rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap"
+    rel="stylesheet">
+
+  <!-- Your app title -->
+  <title>Daviplata App</title>
+  <link rel="stylesheet" href="../css/app.css">
+
+</head>
+
+<body class="bg-daviplata">
+  <div id="wrapper" class="main">
+    <header class="headernew">
+      <div class="headernew__wrapper">
+        <div class="wrapper__arrow"><img src="../assets/images/arrow-left-white.svg" alt="left" class="icon-arrow-left">
+        </div>
+        <div class="wrapper__logo"> <img src="../assets/images/logo.daviplata-header.svg" alt="logo-daviplata"
+            class="icon-logo-daviplata"></div>
+        <div class="wrapper__closed"> <img src="../assets/images/close.svg" alt="closed" class="icon-closed-app"></div>
+      </div>
+    </header>
+    <!--end headernew-->
+
+    <div class="content-general">
+      <div class="box-white" id="formData">
+        <h1 class="main-title">Ingrese los siguientes datos para cotizar el SOAT:</h1>
+        <form class="form" id="myForm">
+
+          <!--input text-->
+          <div class="form__input">
+            <label for="label-title">¿Cuál es la placa del Carro/Moto?
+              <a href="javascript:void(0)" class="tooltipButton">
+                <img src="../assets/images/icon-ask-tooltip.svg" alt="">
+              </a>
+              <div class="tooltip" id="capa">
+                <p class="tooltip__message">
+                  Por favor ingrese el número de placa sin espacios ni caracteres especiales.
+                </p>
+              </div>
+            </label>
+            <!--Aqui se ingresa la placa por primera vez-->
+            <input type="text" placeholder="" maxlength="8" id="licensePlate" onkeyup="mayus(this);">
+            <div class="errorWrapper"><span class="errorWrapper__message">Ingrese una placa válida</span></div>
+          </div>
+          <!--Radio Buttons-->
+          <div class="form__input">
+            <label for="label-title">¿El carro/moto se encuentra a su nombre?</label>
+            <div class="wrapper-radio">
+              <div class="chooseOption">
+                <p>
+                  <input type="radio" id="yesOptionCheck" name="radioCheck">
+                  <label for="yesOptionCheck"><span></span>Si</label>
+                </p>
+              </div>
+              <div class="chooseOption">
+                <p>
+                  <input type="radio" id="noOptionCheck" name="radioCheck">
+                  <label for="noOptionCheck"><span></span>No</label>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--formulario completo-->
+          <div id="form-completed" class="hide-form">
+            <!--Select-->
+            <div class="form__input">
+              <label for="label-title">
+                ¿Cuál es el tipo de identificación del
+                propietario?
+              </label>
+              <select name="" id="">
+                <option value="-1">Option 1</option>
+                <option value="1">Option 2</option>
+              </select>
+            </div>
+
+            <div class="form__input">
+              <label for="label-title">¿Cuál es el número del identificación?</label>
+              <input type="text" placeholder="">
+            </div>
+
+            <div class="form__input">
+              <label for="label-title">¿Cuál es el nombre del propietario?</label>
+              <input type="text" placeholder="">
+            </div>
+
+            <div class="form__input">
+              <label for="label-title">¿Cuáles son los apellidos del propietario?</label>
+              <input type="text" placeholder="" id="lastOwner">
+            </div>
+
+            <!--Check Buttons-->
+            <div class="form__input">
+              <div class="wrapper-radio">
+                <div class="chooseOption">
+                  <p>
+                    <input type="checkbox" id="aceptDeclare" name="radioCheck">
+                    <label for="aceptDeclare"><span></span></label>
+                  </p>
+                </div>
+                <div class="wrapper-radio-item wrapper-radio-item--flex">
+                  <div class="wrapper-radio-item__text">
+                    <label for="aceptDeclare">Declaro que tengo la <a href="" style="text-decoration: underline; font-weight: bold;">autorización</a> 
+                      del propietario del vehículo para
+                      suministrar sus datos a Davivienda
+                      para la compra del SOAT</label>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <!--end formulario completo-->
+
+          <a href="pantalla-3.html" class="button button--gray" id="btnSend" onclick="validarInformacion(); return false">Cotizar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+     <!--  BOTON AYUDA  -->
+     <div class="btn-ayuda">
+      <a href="#">
+          <img src="../assets/images/help.svg" alt="">
+      </a>
+  </div>
+  <!--  end BOTON AYUDA  -->
+  </footer>
+  <!--end wrapper-->
+  </div>
+  <!--Modal-->
+  <div class="overlay overlay--hidden" id="modal">
+    <div class="box-white">
+      <p class="textModal">
+        Ha superado el limite de cotizaciones
+        de SOAT permitidas.
+      </p>
+
+      <button class="button button--red" onclick="closedModal()">Aceptar</button>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+  <script>
+    var placaExistente = "ABC123";
+    var placaError = "DE F123";
+    var queries = "ENE192";
+    messageError.style.display = "none";
+    var declare = document.querySelector("input[id=yesOptionCheck]");
+    var aceptDeclare = document.querySelector("input[id=aceptDeclare]");
+    myForm.addEventListener('change', function () {
+      if (licensePlate.value.length == 6 && licensePlate.value !== placaExistente && declare.checked) {
+        document.getElementById('form-completed').style.display = "block"
+      }
+      else if (licensePlate.value === queries) {
+        document.getElementById('modal').classList.remove('overlay--hidden');
+      }
+     if (aceptDeclare.checked && document.getElementById('lastOwner').value.length >= 3) {
+        btnSend.classList.add('button--red');
+        btnSend.classList.remove('button--gray');
+      }
+      else if (!aceptDeclare.checked && document.getElementById('lastOwner').value.length <= 3) {
+        btnSend.classList.remove('button--red');
+        btnSend.classList.add('button--gray');
+      }
+      if (licensePlate.value == placaExistente && licensePlate.value.length == 6 && declare.checked) {
+        btnSend.classList.add('button--red');
+        btnSend.classList.remove('button--gray');
+
+      }
+    });
+
+
+    myForm.addEventListener('keyup', function () {
+      if (licensePlate.value == placaExistente && licensePlate.value.length == 6 && declare.checked) {
+        btnSend.classList.add('button--red');
+        btnSend.classList.remove('button--gray');
+
+      } else if (licensePlate.value !== placaExistente && licensePlate.value.length < 6) {
+        btnSend.classList.remove('button--red');
+        btnSend.classList.add('button--gray');
+      }
+
+    });
+    function closedModal() {
+      document.getElementById('modal').classList.add('overlay--hidden');
+    }
+
+    function mayus(e) {
+      e.value = e.value.toUpperCase();
+    }
+//cadena.toLowerCase()
+  </script>
+</body>
+
+</html>

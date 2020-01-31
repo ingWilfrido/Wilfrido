@@ -1,0 +1,10 @@
+.errorWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.errorWrapper .errorWrapper__message{
+    font-size: 11px;
+    color:#DD141D;
+}

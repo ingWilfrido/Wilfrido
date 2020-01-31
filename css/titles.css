@@ -1,0 +1,10 @@
+/*Titulo principal para formularios caja blanca*/
+
+.main-title{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 25px;
+    line-height: 24px;
+}

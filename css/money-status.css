@@ -1,0 +1,112 @@
+.money-status {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px auto 20px auto;
+}
+
+.money-status .money-status__circle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: flex-end;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #dddcdb;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  z-index: 1000;
+  margin: auto;
+  justify-content: center;
+  margin-top: 10px;
+}
+.money-status__wrapper-btns {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+.money-status__wrapper-btns .money-status__option {
+  position: absolute;
+}
+
+.money-status__wrapper-btns .money-status__option.money-status__option--pay {
+  position: absolute;
+  bottom: 1px;
+  left: -23px;
+  width: 75px;
+}
+.money-status__wrapper-btns
+  .money-status__option.money-status__option--recharge {
+  position: absolute;
+  width: 75px;
+  right: -23px;
+  bottom: 2px;
+}
+.money-status .money-status__option.money-status__option--spend-money {
+  position: absolute;
+  width: 141px;
+  bottom: -25px;
+  left: 29px;
+}
+
+.money-status .money-status__title-circle {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.money-status .money-status__expected-result {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin: 0;
+  }
+  .money-status .money-status__icon-update {
+    width: 25px;
+  }
+  .money-status .money-status__box-update-result {
+    color: #212529;
+    text-decoration: none;
+    font-size: 12px;
+    border: 1px dashed #dd141d  ;
+    border-radius: 10px;
+    width: 96px;
+    height: 42px;
+  }

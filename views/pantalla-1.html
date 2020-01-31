@@ -1,0 +1,370 @@
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <!--cache control App-->
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <!--cache control App-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#ed1c27">
+
+  <!-- Set Up the App Icon -->
+  <link rel="apple-touch-icon" href="../../assets/img/apple/icon5757.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/img/apple/touch-icon-ipad-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/img/apple/apple-touch-icon.png">
+
+  <!-- Load It Like A Native App -->
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Customize the Startup Screen -->
+  <link rel="apple-touch-startup-image" href="../../assets/img/apple/apple-touch-startup-image-320x460.png"
+    media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
+  <link rel="apple-touch-startup-image" href="../../assets/img/apple/apple-touch-startup-image-640x920.png"
+    media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="../../assets/img/apple/apple-touch-startup-image-640x1096.png"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="../../assets/img/apple/apple-touch-startup-image-768x1004.png"
+    media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)">
+  <link rel="apple-touch-startup-image" href="../../assets/img/apple/apple-touch-startup-image-748x1024.png"
+    media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)">
+  <link rel="apple-touch-startup-image" href="../../assets/img/apple/apple-touch-startup-image-1536x2008.png"
+    media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="../../assets/img/apple/apple-touch-startup-image-1496x2048.png"
+    media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
+
+  <!--  GOOGLE FONTS  -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i&amp;display=swap&amp;subset=latin-ext"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;display=swap"
+    rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap"
+    rel="stylesheet">
+
+  <!-- Your app title -->
+  <title>Daviplata App</title>
+  <link rel="stylesheet" href="../css/app.css">
+
+</head>
+
+<body class="bg-daviplata">
+  <div id="wrapper" class="main heightAuto">
+    <header class="headernew">
+      <div class="headernew__wrapper">
+        <div class="wrapper__arrow"><img src="../assets/images/arrow-left-white.svg" alt="left" class="icon-arrow-left">
+        </div>
+        <div class="wrapper__logo"> <img src="../assets/images/logo.daviplata-header.svg" alt="logo-daviplata"
+            class="icon-logo-daviplata"></div>
+        <div class="wrapper__closed"> <img src="../assets/images/close.svg" alt="closed" class="icon-closed-app"></div>
+      </div>
+    </header>
+    <!--end headernew-->
+    <div class="header-menu">
+      <!--logo hamburguesa-->
+      <div class="header-menu__hamburguesa">
+        <nav role="navigation" class="navegacion">
+          <div id="menuToggle">
+            <!--A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
+            <input type="checkbox" id="menuToogle">
+            <!--Some spans to act as a hamburger. They are acting like a real hamburger,  not that McDonalds stuff. -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <!--Too bad the menu has to be inside of the button but hey, it's pure CSS magic. -->
+            <ul id="menu">
+              <div class="title-menu">
+                <h1>
+                  Menú
+                </h1>
+              </div>
+
+              <div class="menu-iconos-principales">
+
+                <div class="menu-principal-cuanto-tengo">
+                  <a href="#">
+                    <img src="../../assets/img/menu-ico-cuanto-tengo.svg">
+                    <p>¿Cuánto tengo?</p>
+                  </a>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="../../assets/img/menu-ico-abrir-productos-rojo.svg" id="icon-open-red"
+                        style="display: block;">
+                      <img src="../../assets/img/menu-ico-abrir-productos-gris.svg" id="icon-open-gray"
+                        onclick="goToOpenProductShow()" style="display: none;">
+                      <p>Abrir<br>Productos</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../../assets/img/menu-ico-usar-plata-rojo.svg" id="icon-wear-red"
+                        style="display: none;">
+                      <img src="../../assets/img/icon-usar-plata-gris.svg" id="icon-wear-gray"
+                        onclick="goToWearSilverShow()" style="display: block;">
+                      <p>Usar<br>Plata</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../../assets/img/menu-ico-mas-servicios-rojo.svg" id="icon-services-red"
+                        style="display: none;">
+                      <img src="../../assets/img/menu-ico-mas-servicios-gris.svg" id="icon-services-gray"
+                        onclick="goToMoreServicesShow()" style="display: block;">
+                      <p>Más<br>Servicios</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!--Abrir Productos-->
+              <div class="menu-principal-submenu" id="abrir-producto" style="display: block;">
+                <ul class="scroll-item">
+                  <li><a href="#popup">
+                      <img src="../../assets/img/menu-ico-tarjeta-virtual.svg">
+                      <p class="trigger_popup_fricc">
+                        Tarjeta virtual
+                      </p>
+                    </a>
+
+                  </li>
+                  <li><a href="#popup">
+                      <img src="../../assets/img/menu-ico-microseguros.svg">
+                      <p class="trigger_popup_fricc">
+                        Microseguros
+                      </p>
+                    </a>
+                  </li>
+                  <li><a href="#popup">
+                      <img src="../../assets/img/Nanocrédito.svg">
+                      <p class="trigger_popup_fricc">
+                        Nanocrédito
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#popup">
+                      <img src="../../assets/img//menu-ico-bolsillo.svg">
+                      <p>
+                        Bolsillos
+                      </p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#popup">
+                      <img src="../../assets/img/icon-soat.svg">
+                      <p>
+                        SOAT
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!--end abrir Productos-->
+
+              <!--Usar plata-->
+              <div class="menu-principal-submenu" id="usar-plate" style="display: none;">
+                <ul class="scroll-item">
+                  <li>
+                    <a href="#popup">
+                      <img src="../../assets/img/menu-ico-tarjeta-virtual.svg">
+                      <p>
+                        Tarjeta Virtual
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#popup">
+                      <img src="../../assets/img/meter-plata.svg">
+                      <p>
+                        Meter plata
+                      </p>
+                    </a>
+
+                  </li>
+                  <li>
+                    <a href="#popup">
+                      <img src="../../assets/img/menu-ico-pasar-plata.svg">
+                      <p>
+                        Pasar plata
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#popup">
+                      <img src="../../assets/img/menu-ico-recargas-prepago.svg">
+                      <p>
+                        Recargas prepago
+                      </p>
+                    </a>
+
+                  </li>
+                  <li>
+                    <a href="#popup">
+                      <img src="../../assets/img/menu-ico-pagar-servicios.svg">
+                      <p>
+                        Pagar servicios
+                      </p>
+                    </a>
+
+                  </li>
+                  <li>
+                    <a href="#popup">
+                      <img src="../../assets/img/menu-ico-sacar-plata.svg">
+                      <p>
+                        Sacar plata
+                      </p>
+                    </a>
+                  </li>
+                  <li onclick="showModal()">
+                    <a href="#popup">
+                      <img src="../../assets/img/icon-qr.svg">
+                      <p>
+                        QR DaviPlata
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!--end usar plata-->
+              <!--Más Servicios-->
+              <div class="menu-principal-submenu" id="mas-servicios" style="display: none;">
+                <ul>
+                  <li>
+                    <a href="#popup">
+                      <img src="../../assets/img/menu-ico-activar-casita-roja.svg">
+                      <p>
+                        Activar la Casita Roja
+                      </p>
+                    </a>
+
+                  </li>
+                  <li>
+                    <a href="#popup">
+                      <img src="../../assets/img/menu-ico-cuanto-debo.svg">
+                      <p>
+                        ¿Cuánto debo?
+                      </p>
+                    </a>
+
+                  </li>
+                  <li>
+                    <a href="#popup">
+                      <img src="../../assets/img/menu-ico-ver-movimientos.svg">
+                      <p>
+                        Ver Movimientos
+                      </p>
+                    </a>
+
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="../../assets/img/menu-ico-microseguros.svg">
+                      <p>
+                        Cambiar clave y correo
+                      </p>
+                    </a>
+
+                  </li>
+                </ul>
+              </div>
+              <!--end más Servicios-->
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- titulo menu  -->
+      <div class="header-menu__title-wrapper">
+        <h1>
+          ¿Cuánto tengo?
+        </h1>
+      </div>
+      <!--logo alerta-->
+      <div class="header-menu__alert">
+        <img src="../assets/images/icono-alerta.svg" class="icon-alert-not">
+      </div>
+    </div>
+    <!--end header-menu-->
+
+    <!--Contenedor de consultar saldo-->
+    <div class="money-status">
+      <div class="money-status__circle">
+        <h1 class="money-status__title-circle">Mi DaviPlata</h1>
+        <p class="money-status__expected-result">$00.000.000.000.00</p>
+        <p class="available">Disponble</p>
+        </p>
+      </div>
+      <div class="money-status__wrapper-btns">
+        <div class="money-status__option money-status__option--pay">
+          <a href="">
+            <img src="../assets/images/boton-pagar.svg" alt="" class="money-status__btn">
+          </a>
+        </div>
+        <div class="money-status__option money-status__option--spend-money">
+          <a href="">
+            <img src="../assets/images/boton-pasar-plata.svg" alt="" class="money-status__btn">
+          </a>
+        </div>
+        <div class="money-status__option money-status__option--recharge">
+          <a href="">
+            <img src="../assets/images/boton-recargar.svg" alt="" class="money-status__btn">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End contenedor de consultar saldo-->
+
+  <!--Contenedor de meter y sacar plata-->
+  <div class="main-push-task">
+    <div class="main-push">
+      <div class="main-push__wraper-img">
+        <img class="icon" src="../assets/images/icon_meterplata.svg" alt="">
+      </div>
+      <a href="" class="link-option">Meter plata</a>
+    </div>
+    <div class="main-take">
+      <div class="main-take__wraper-img">
+        <img class="icon" src="../assets/images/icon_sacarplata.svg" alt="">
+      </div>
+      <a href="" class="link-option">Sacar plata</a>
+    </div>
+  </div>
+  <!--End contenedor de meter y sacar plata-->
+
+  <!--Contenedor circulos de detalles-->
+  <div class="details-circles">
+    <div class="details-circles__item"></div>
+   
+  </div>
+
+
+  <!--End contenedor circulos de detalles-->
+
+
+  <footer>
+    <!--  BOTON AYUDA  -->
+    <div class="btn-ayuda">
+      <a href="#">
+      </a>
+    </div>
+    <!--  end BOTON AYUDA  -->
+  </footer>
+  <!--end wrapper-->
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

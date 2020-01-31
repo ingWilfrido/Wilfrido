@@ -1,0 +1,23 @@
+/*Caja formulario*/
+.box-white{
+    width: 90%;
+    height: 78px;
+    background-color: #ffffff;
+    margin: 34px auto 37px auto;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px 20px 45px 20px;
+    height: auto;
+    max-width: 400px;
+}
+
+.box-white.box-white__noPdngLateral{
+    padding: 20px 0 20px 0;
+}
+
+.box-transparent{
+    width: 90%;
+    margin: 0 auto 0 auto;
+    position: relative
+}
+

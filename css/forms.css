@@ -1,0 +1,103 @@
+.form {
+  margin: 0;
+}
+
+form .form__input {
+  margin-bottom: 20px;
+}
+
+form .form__input:last-child {
+  margin-bottom: 0;
+}
+form .form__input .label,label {
+  display: inline-block;
+  width: 90%;
+  margin-bottom: 5px;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #2F3032;
+  text-align: justify;
+  font-weight: lighter;
+  line-height: 16px;
+}
+
+.form__input label.label--mrgleft {
+  margin-left: 13px;
+}
+.form__input .form-flex {
+  display: flex;
+}
+
+.form__input .form-flex span {
+  margin: 0 6px;
+  color: #dd141d;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form__input .form-flex .select-flex {
+  width: 166px;
+  margin-right: 12px;
+}
+.form__input .form-flex .input-flex {
+  width: 90px;
+}
+
+.form__input .form-flex .input-flex:last-child {
+  width: 90px;
+  margin: 0;
+}
+/*Forzar margin boton*/
+.form .form__input.form__input--last-child {
+  margin-bottom: 0;
+}
+
+form .form__input input[type="text"],
+input[type="number"],
+select {
+  font-weight: normal;
+  max-width: 100%;
+  width: 100%;
+  background-color: transparent;
+  font-size: 14px;
+  color: #2f3032;
+  border-bottom: 1px solid #dd141d;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+form .form__label-title {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  color: #2f3032;
+}
+form .form__input select {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  background: url("../assets/images/arrow-down-red.svg") no-repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  background-size: 18px;
+  background-position: 100% center;
+  box-sizing: border-box;
+  padding-bottom: 5px;
+  border-radius: 0;
+}
+
+/*Radio*/
+
+
+
+.hide-form {
+  display: none;
+}

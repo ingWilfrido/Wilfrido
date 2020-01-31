@@ -1,0 +1,47 @@
+.tooltipButton {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    transform: translateY(2px);
+    cursor: pointer;    
+}
+
+.tooltip {
+    display: inline-block;
+    width: 80%;
+    max-width: 350px;
+    background-color: #cccccc;
+    border-radius: 6px;
+    padding: 5px 15px;
+    z-index: 9;
+    text-align: justify;
+    position: absolute;
+    top: 9%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(0%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition-duration: .2s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tooltip p {
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.3;
+    color: #000000;
+    font-weight: 300;
+}
+.tooltip .tooltip__message {
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.3;
+    color: #000000;
+    font-weight: 300;
+}
+
+.tooltipButton:hover~.tooltip{
+    opacity: 9;
+}

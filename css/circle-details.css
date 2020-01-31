@@ -1,0 +1,10 @@
+.details-circles {
+    width: 100%;
+    display: flex;
+
+}
+
+.details-circles__item {
+    width: 120px;
+    height: 120px;
+}

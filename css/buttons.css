@@ -1,0 +1,32 @@
+.button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 140px;
+  height: 44px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  }
+
+  
+  .button.button--red {
+    background-color: #dd141d;
+  }
+  
+  .button.button--gray {
+    background-color: #575757;
+  }
+
+  .button.button--download{
+    transform: translate(-50%, 50%);
+    left: 50%;
+    top: 0;
+  }

@@ -1,0 +1,106 @@
+/*Header Rojo*/
+.headernew {
+  position: relative;
+  width: 100%;
+  background: #dd141d;
+  text-align: center;
+  padding: 10px 0 0 0;
+  padding: 15px 15px 10px 15px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+.headernew .headernew__wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.headernew .headernew__wrapper .wrapper__arrow {
+  width: 10%;
+}
+.headernew .headernew__wrapper .wrapper__logo {
+  width: 10%;
+}
+
+.headernew .headernew__wrapper .wrapper__logo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    }
+
+    .headernew .headernew__wrapper .wrapper__logo .title-main {
+     font-size: 18px;
+     font-weight: lighter;
+     margin: 0;
+     color: white;
+      }
+.headernew .headernew__wrapper .wrapper__logo .icon-logo-daviplata {
+width: 150px;
+}
+
+/*Header negro*/
+.header-menu{
+    width: 100%;
+    background-color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.header-menu .header-menu__hamburguesa{
+   width: 10%;
+}
+
+.header-menu .header-menu__title-wrapper{
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header-menu .header-menu__title-wrapper h1{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+    padding: 10px 0;
+    font-weight: lighter;
+}
+
+.header-menu .header-menu__alert{
+    width: 10%;
+}
+.header-menu .header-menu__alert .icon-alert-not{
+    width: 25px;
+}
